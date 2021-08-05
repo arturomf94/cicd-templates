@@ -1,18 +1,10 @@
 {
-  "project_name": "cicd-sample-project",
+  "project_name": "model_name",
   "version": "0.0.1",
-  "description": "Databricks Labs CICD Templates Sample Project",
-  "author": "",
-  "cloud": [
-    "AWS",
-    "Azure",
-    "Google Cloud"
-  ],
-  "cicd_tool": [
-    "GitHub Actions",
-    "Azure DevOps",
-    "GitLab"
-  ],
+  "description": "DS model model_name - time",
+  "author": "whoami",
+  "cloud": "AWS",
+  "cicd_tool": "GitHub Actions",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
   "workspace_dir": "/Shared/dbx/{{cookiecutter.project_slug}}",
   "artifact_location": "dbfs:/Shared/dbx/projects/{{cookiecutter.project_slug}}",
