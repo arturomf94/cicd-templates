@@ -186,8 +186,8 @@ class PostProcessor:
             os.remove("azure-pipelines.yml")
             os.remove(".gitlab-ci.yml")
 
-            replace_vars(".github/workflows/onpush.yml")
-            replace_vars(".github/workflows/onrelease.yml")
+            # replace_vars(".github/workflows/onpush.yml")
+            # replace_vars(".github/workflows/onrelease.yml")
 
         if cicd_tool == "Azure DevOps":
             shutil.rmtree(".github")
