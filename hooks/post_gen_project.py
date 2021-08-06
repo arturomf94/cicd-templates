@@ -185,7 +185,6 @@ class PostProcessor:
         if cicd_tool == "GitHub Actions":
             os.remove("azure-pipelines.yml")
             os.remove(".gitlab-ci.yml")
-            os.remove(".git/")
 
             # replace_vars(".github/workflows/onpush.yml")
             # replace_vars(".github/workflows/onrelease.yml")
@@ -209,7 +208,7 @@ class PostProcessor:
         deployment_file.write_text(deployment)
         project_file.write_text(json.dumps(PROJECT_FILE_CONTENT, indent=2))
         Path(".dbx/lock.json").write_text("{}")
-        os.system("git init")
+        # os.system("git init")
 
 
 if __name__ == "__main__":
