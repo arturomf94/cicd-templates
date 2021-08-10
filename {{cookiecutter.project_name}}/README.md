@@ -1,7 +1,5 @@
 # {{cookiecutter.project_name}}
 
-This is a sample project for Databricks, generated via cookiecutter.
-
 While using this project, you need Python 3.X and `pip` or `conda` for package management.
 
 ## Installing project requirements
@@ -37,7 +35,7 @@ dbx launch --job={{cookiecutter.project_name}}-sample-integration-test --as-run-
 ## Interactive execution and development
 
 1. `dbx` expects that cluster for interactive execution supports `%pip` and `%conda` magic [commands](https://docs.databricks.com/libraries/notebooks-python-libraries.html).
-2. Please configure your job in `conf/deployment.json` file. 
+2. Please configure your job in `conf/deployment.json` file.
 2. To execute the code interactively, provide either `--cluster-id` or `--cluster-name`.
 ```bash
 dbx execute \
